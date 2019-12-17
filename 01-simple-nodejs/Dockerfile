@@ -1,6 +1,8 @@
 FROM node:8-alpine
 
-COPY rootfs /app
+WORKDIR /app
+COPY . ./
+RUN npm install
 
 EXPOSE 8000
-CMD ["node", "/app/index.js"]
+CMD ["node", "index.js"]
