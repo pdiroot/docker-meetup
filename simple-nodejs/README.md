@@ -5,7 +5,7 @@
 Build the image.
 
 ```bash
-docker build -t simple-nodejs 01-simple-nodejs
+docker build -t simple-nodejs simple-nodejs
 ```
 
 Run container using this image.
